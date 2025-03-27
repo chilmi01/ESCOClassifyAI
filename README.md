@@ -19,7 +19,7 @@
 - Python 3.x
 - pandas, scikit-learn, numpy
 - NetworkX, matplotlib
-- React, Tailwind CSS (for GUI)
+- HTML, JavaScript, React, Tailwind CSS (for GUI)
 - MongoDB (for Database)
 
 ## 🚀 Getting Started
@@ -52,30 +52,51 @@ A clean and responsive interface allows users to upload documents and view real-
 ```bash
 ESCOclassifyAI/
 │
-├── datasets/                       # Finalized dataset used in classification
+├── app/                            # Frontend (React + Tailwind) for GUI
+│   ├── public/                     # Static HTML files
+│   │   ├── index.html
+│   │   └── results-with-charts.html
+│   │
+│   ├── src/
+│   │   ├── components/             # Reusable UI components
+│   │   │   ├── ESCOClassifyAI.js
+│   │   │   └── SkillChart.js
+│   │   │
+│   │   ├── utils/                  # Client-side logic
+│   │   │   ├── skill-extraction.js
+│   │   │   └── uploadHandler.js
+│   │   │
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── index.css
+│   │
+│   ├── package.json                # Frontend dependencies
+│   ├── tailwind.config.js          # Tailwind CSS config
+│   └── postcss.config.js           # PostCSS config
+│
+├── datasets/                       # Final dataset used for classification
 │   └── final_dataset.csv
 │
-├── images/                         # Visuals for architecture and GUI
+├── images/                         # Visual assets for documentation
 │   ├── architecture.png
 │   └── gui_image.png
 │
-├── mapping_files/                 # Mapping of ESCO skills and occupations
+├── mapping_files/                  # ESCO mapping CSVs
 │   ├── ESCO_Mapping_csv.csv
 │   └── ESCO_mapping_occupations.csv
 │
 ├── src/
-│   ├── data-analysis/              # Classification and evaluation logic
+│   ├── data-analysis/              # Skill classification logic & evaluation
 │   │   ├── LinearDiscriminantAnalysis.py
 │   │   ├── STEM_categorizer.py
 │   │   └── classifier_evaluation.py
 │   │
-│   ├── data/                       # Document ingestion and MongoDB upload
+│   ├── data/                       # MongoDB & document ingestion
 │   │   ├── mongodb_uploader.py
 │   │   └── theses_collector.py
 │   │
-│   └── pre-processing/            # ESCO skill and occupation extraction
+│   └── pre-processing/             # Skill extraction from ESCO data
 │       ├── Skill-Occupation_extractor.py
 │       └── esco-skill-extractor.py
 │
-└── README.md                      # Project documentation
-
+└── README.md                       # Project documentation
