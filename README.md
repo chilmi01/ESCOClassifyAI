@@ -2,7 +2,7 @@
 
 **ESCOclassifyAI** is an AI-driven skill classification framework that maps ESCO (European Skills, Competences, Qualifications and Occupations) skills to the core STEM domains—**Engineering**, **Science**, **Technology**, and **Mathematics**. It integrates classification algorithms, STEM enrichment, and explainability to support educational, labor market, and research analysis.
 
-![ESCOclassifyAI Architecture](./architecture.png)
+![ESCOclassifyAI Architecture](./images/architecture.png)
 
 ---
 
@@ -20,7 +20,7 @@
 
 A clean and responsive interface allows users to upload documents and view real-time classification results, extracted skills, and summaries.
 
-![GUI Screenshot](./gui_image.png)
+![GUI Screenshot](./images/gui_image.png)
 
 ### GUI Highlights:
 - 📤 Upload academic or research documents.
