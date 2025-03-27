@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 A clean and responsive interface allows users to upload documents and view real-time classification results, extracted skills, and summaries.
 
-![GUI Screenshot](./images/gui_image.png)
+![GUI Screenshot](./images/gui_imageNew.png)
 
 ### GUI Highlights:
 - 📤 Upload academic or research documents.
@@ -79,7 +79,7 @@ ESCOclassifyAI/
 │
 ├── images/                         # Visual assets for documentation
 │   ├── architecture.png
-│   └── gui_image.png
+│   └── gui_imageNew.png
 │
 ├── mapping_files/                  # ESCO mapping CSVs
 │   ├── ESCO_Mapping_csv.csv
